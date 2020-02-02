@@ -1,0 +1,112 @@
+/* public/styles/styles.css */
+
+.topImage {
+    position: relative;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topBtn {
+    position: relative;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* - - - -  id  - - - - - */
+#imgBB {
+    max-width: 80%;
+}
+
+#topBtn {
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+/* - - -  Media Queries  - - - */
+@media only screen and (max-width: 980px) {   /* PC: 110 - 125% zoom en Chrome */
+}
+
+@media only screen and (max-width: 768px) {   /* Aplica a mi celular horizontal y ipad vertical. PC: 150% zoom en Chrome  */
+}
+
+@media only screen and (max-width: 640px) {   /* Aplica a mi celular vertical. PC: 125% - 500% zoom en Chrome  */
+    #imgBB {
+        max-width: 95%;
+    }
+    
+    .centerImage2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        font-size: small;
+    }
+
+}
+
+
+/* ------------------------ */
+
+.list-group-item {
+  line-height: 2.5;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Questrial', sans-serif;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../img/image01.png");
+  /* Full height */
+  height: 30%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.dLogin{
+  width: 500px;
+}
+
+.diSignin{
+  margin-top: 5rem;
+}
+
+.loginWindow{
+  background: rgba(14, 84, 175, 0.05);
+}
+
+.aboutText{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.jumbotron{
+  padding-top: 70px;
+  margin-top: 100px;
+}
+
+.aboutTitle{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-text{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.aboutPat{
+  font-size: 1.2rem;
+}

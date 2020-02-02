@@ -1,0 +1,32 @@
+<!-- views/scrape.handlebars
+     Saved new Articles             -->
+
+<div class="card w-100">          <!--Nav bar  -->
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/scrape">Scrape new Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/savedArts">Saved Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/clear">Clear Articles</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ============================================================== -->
+
+<p>
+    Scrape new Articles
+</p>
+
+<button type="button" class="btn btn-success" id="scrapeBtn">Scrape</button>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="/js/scrape.js"></script>

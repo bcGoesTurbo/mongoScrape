@@ -1,0 +1,62 @@
+<!-- views/artNotes.handlebars
+     Notes for an Article             -->
+
+<div class="card w-100">          <!--Nav bar  -->
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/scrape">Scrape new Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/savedArts">Saved Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/clear">Clear Articles</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ============================================================== -->
+
+<h1 id="topBtn">Notes for an Article</h1>
+
+<!-- -->
+<div class="card my-4 border-info">
+    <h5 class="card-header"> {{title}} </h5>
+    <div class="card-body">
+        <p class="card-text">
+            {{summary}}
+        </p>
+    </div> 
+    <div class="card-footer text-muted">
+        <small id="articleId">{{_id}}</small>
+    </div>       
+</div>
+<!-- -->
+<div class="card border-warning">
+        <div class="form-group">
+            <label for="InputNotes"> Notes: </label>
+            <input type="text" class="form-control" id="yourNotes" placeholder="Write your comments here">
+        </div>
+        <span>
+            <button class="btn btn-outline-primary btn-sm mx-3" id="addNotesBtn">Add Notes</button>
+        </span>
+</div>
+<!-- -->
+{{#each notes}}
+    <div class="card">
+        {{body}}
+    </div>
+{{/each}}
+<!-- -->
+<div class="topBtn">
+    <button type="button" class="btn btn-outline-danger badge-pill" id="topBtn"> Top </button>
+</div>
+<!-- -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="/js/artNotes.js"></script>
