@@ -1,7 +1,7 @@
-// public/js/savedArts.js
+// public/js/savedArticles.js
 
 function createSCard (rec){
-    const baseUrl = "https://www.reforma.com/";
+    const baseUrl = "https://www.foxsports.com.au/";
     var card   = $("<div>");
     var header = $("<h5>");
     var body   = $("<div>");

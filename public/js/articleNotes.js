@@ -14,6 +14,6 @@ $("#addNotesBtn").on("click", function(){
     .then(function(data) {
         console.log(data);
         $("#yourNotes").empty();
-        window.location.href = "/savedArts";
+        window.location.href = "/savedArticles";
     });
 });

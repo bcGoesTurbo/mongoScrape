@@ -24,7 +24,7 @@ module.exports = function(app) {
 
   //-----------------------------------------
   app.get("/scrape", function(req, res) {
-    axios.get("https://www.reforma.com/").then(function (response) {
+    axios.get("https://www.foxsports.com.au/").then(function (response) {
         var $ = cheerio.load(response.data);
         let result = {};
 
@@ -78,7 +78,7 @@ module.exports = function(app) {
   app.get("/saveArticle/:id", function(req, res) {
 	db.Article.updateOne({ _id: req.params.id }, {$set: {saved:true} })
 		.then(function (dbArticle) {
-			res.render("savedArts");
+			res.render("savedArticles");
 		})
 		.catch(function (err) {
 			console.log(err);
@@ -86,15 +86,15 @@ module.exports = function(app) {
   });
 
   //-----------------------------------------
-  app.get("/savedArts", function(req, res) {
-    res.render("savedArts");
+  app.get("/savedArticles", function(req, res) {
+    res.render("savedArticles");
   });
 
   //-----------------------------------------
   app.get("/unsaveArt/:id", function(req, res) {
 	db.Article.updateOne({ _id: req.params.id }, {$set: {saved:false} })
 		.then(function (dbArticle) {
-			res.render("savedArts");
+			res.render("savedArticles");
 		})
 		.catch(function (err) {
 			console.log(err);
@@ -110,7 +110,7 @@ module.exports = function(app) {
         .findOneAndUpdate({ _id: req.params.id }, {$push: {notes: dbNote._id} } )
     })
     .then(function(dbArticle) {
-        res.render("savedArts");
+        res.render("savedArticles");
     })
     .catch(function (err2) {
         console.log(err2);
@@ -122,7 +122,7 @@ module.exports = function(app) {
     db.Article.find({_id: req.params.id})
     .populate("notes")
     .then(function (dbArticle) {
-        res.render("artNotes", dbArticle[0]);
+        res.render("articleNotes", dbArticle[0]);
     })
     .catch(function (err) {
         console.log(err);

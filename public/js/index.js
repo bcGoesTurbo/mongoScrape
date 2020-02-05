@@ -1,7 +1,7 @@
 // public/js/index.js
 
 function createCard (rec){
-    const baseUrl = "https://www.reforma.com/";
+    const baseUrl = "https://www.foxsports.com.au/";
     var card   = $("<div>");
     var header = $("<h5>");
     var body   = $("<div>");
@@ -12,7 +12,7 @@ function createCard (rec){
         "<a href=" +
         baseUrl    +
         rec.link   +
-        " class='text-success' target='_blank'>" +
+        " class='pattern-5-article__heading-text' target='_blank'>" +
         rec.title  +
         "</a>"
     );
