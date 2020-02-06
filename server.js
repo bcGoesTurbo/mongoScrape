@@ -32,7 +32,7 @@ require("./routes/htmlRoutes")(app);
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 
 // TODO setup environment heroku file to replace "process.env.MONGODB_URI"
-var MONGODB_URI = "https://git.heroku.com/sports-scraper-app.git" || "mongodb://localhost/scraper";
+var MONGODB_URI = "https://sports-scraper-app.herokuapp.com/" || "mongodb://localhost/scraper";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
    .then(function() {
