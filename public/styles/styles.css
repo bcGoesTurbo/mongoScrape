@@ -1,11 +1,24 @@
 /* public/styles/styles.css */
 
+/* html {
+  position: relative;
+  min-height: 100%;
+} */
+body {
+  margin-bottom: 80px;
+  font-family: 'Questrial', sans-serif;
+  background-color: black;
+  /* background-image: url("../img/background.jpg"); */
+  
+ }
+
 .topImage {
     position: relative;
     text-align: center;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
+    height: 60%;
 }
 
 .topBtn {
@@ -19,7 +32,8 @@
 
 /* - - - -  id  - - - - - */
 #imgBB {
-    max-width: 80%;
+    max-width: 100%;
+    height: 70%;
 }
 
 #topBtn {
@@ -57,23 +71,13 @@
   line-height: 2.5;
 }
 
-body, html {
-  height: 100%;
-  font-family: 'Questrial', sans-serif;
-}
 
-.bg {
-  /* The image used */
-  background-image: url("../img/image01.png");
-  /* Full height */
+
+/* .bg {
   height: 30%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
-}
+} */
 
 .dLogin{
   width: 500px;
