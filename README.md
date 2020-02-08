@@ -1,4 +1,10 @@
 # Sports Scraper!
+
 View it live at: <https://sports-scraper-app.herokuapp.com/>
 
-Overview In this assignment, you'll create a web app that lets users view and leave comments on the latest news. But you're not going to actually write any articles; instead, you'll flex your Mongoose and Cheerio muscles to scrape news from another site.
+### Overview
+
+This is web app that lets users "scrape" articles from Fox Sports website, save the ones they link, and allows them to leave comments on the articles.
+
+This app uses MongoDB and is deployed on Heroku.
+
